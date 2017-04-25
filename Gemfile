@@ -13,7 +13,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
-gem 'sqlite3'
+
 
 gem 'rack'
 
@@ -66,4 +66,9 @@ gem 'mongoid', '~> 5.0.0'
 
 group :production do
   gem 'rails_12factor'
+  
+end
+
+group :development, :production do
+  gem 'sqlite3'
 end
