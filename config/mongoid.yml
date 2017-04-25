@@ -22,8 +22,6 @@ production:
     default:
       uri: <%= ENV['MONGOLAB_URI'] %>
       options:
-        skip_version_check: true
-        safe: true
         connect_timeout: 15
         # Change the default read preference. Valid options for mode are: :secondary,
         # :secondary_preferred, :primary, :primary_preferred, :nearest
