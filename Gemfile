@@ -26,7 +26,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'mongoid', '~> 5.0.0'
 
- gem 'pg'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -57,7 +56,7 @@ end
 
 group :production do
   #use postgres on heroku
- 
+  gem 'pg'
   gem 'rails_12factor'
 end 
 
